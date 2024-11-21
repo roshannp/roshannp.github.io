@@ -6,7 +6,7 @@
 
 # Education
 - Master of Science in Cybersecurity Engineering at **Universiy of Colorado Boulder**
-- Bachelor of Engineering in Computer Science at **Anna University**
+- Bachelor of Engineering in Computer Science at **Anna University** 
 
 ## Projects
 ### Project 1
