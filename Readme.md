@@ -1,5 +1,13 @@
 # Roshan's portfolio
 
+# Work Experience
+- Medline Industries - Network Security Analyst 
+- Dish Networks- Member of Scientific Staff - Security
+
+# Education
+- Master of Science in Cybersecurity Engineering at **Universiy of Colorado Boulder**
+- Bachelor of Engineering in Computer Science at **Anna University**
+
 ## Projects
 ### Project 1
 - Description
@@ -9,9 +17,11 @@
 - Description
 - Links
 
-# Education
-- Universiy of Colorado Boulder
+# Certifications
+- CEH , CompTIA Security +
+- Currently preparing for **OSCP**
 
-# Work History
-- Workplace 1
-- Workplace 2
+# Achievements
+- Amy Barnes-Frey Fellowship **[University of Colorado Boulder]**
+- Captain of College Crickeet Team **[Anna University- Sri Sairam Engineering College]**
+- School People Leader **[Narayana Group of Schools]**
