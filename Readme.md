@@ -18,7 +18,7 @@
 - Links
 
 # Certifications
-- CEH , CompTIA Security +
+- **CEH **, CompTIA **Security +**
 - Currently preparing for **OSCP**
 
 # Achievements
