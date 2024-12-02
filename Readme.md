@@ -1,9 +1,10 @@
 # Roshan's portfolio
 
 ## Education
-- **Universiy of Colorado Boulder**
+
+### Universiy of Colorado Boulder
   Master of Science in Cybersecurity Engineering
-- **Anna University**
+### Anna University
  Bachelor of Engineering in Computer Science
 
 ## Work Experience
@@ -13,12 +14,14 @@
 security incidents and achieving seamless migration of VPN services from Cisco to Zscaler
 - Managed and automated firewall rules and policies to enhance security operations. Enhanced data protection and
 incident response through advanced intrusion detection and regular vulnerability assessments.
+
 ### Dish Networks- Security Engineer-R&D
 - Deployed and Managed HashiCorp Vault on AWS EKS cluster to store encryption keys and digital certificates,
 achieving a 90% enhancement in security for API calls, Database Credential rotation, Secret Engines Integration,
 and Tokenization process.
 - Served as security POC for the research team, independently leading application security for Data products
 through black-box testing
+
 ### Dish Networks- Security Engineer Intern-R&D
 - Created automation scripts in Python and BASH to simplify DevOps workflow,Performed code security by
 integrating Snyk with DISHDEVx repositories for automatic vulnerability scans, resulting in a 30% reduction in
