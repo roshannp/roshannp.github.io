@@ -19,9 +19,11 @@ integrating Snyk with DISHDEVx repositories for automatic vulnerability scans, r
 high-risk vulnerabilities.
 - Involved in conducting SAST and DAST, identifying and addressing 100+ vulnerabilities across multiple In-house
 applications, contributing to a 30% improvement in overall security posture.
-# Education
-- Master of Science in Cybersecurity Engineering at **Universiy of Colorado Boulder**
-- Bachelor of Engineering in Computer Science at **Anna University** 
+#### Education
+- **Universiy of Colorado Boulder**
+  Master of Science in Cybersecurity Engineering
+- **Anna University**
+ Bachelor of Engineering in Computer Science 
 
 ## Projects
 
