@@ -1,5 +1,11 @@
 # Roshan's portfolio
 
+## Education
+- **Universiy of Colorado Boulder**
+  Master of Science in Cybersecurity Engineering
+- **Anna University**
+ Bachelor of Engineering in Computer Science
+
 ## Work Experience
 
 ### Medline Industries - Network Security Engineer 
@@ -20,11 +26,7 @@ high-risk vulnerabilities.
 - Involved in conducting SAST and DAST, identifying and addressing 100+ vulnerabilities across multiple In-house
 applications, contributing to a 30% improvement in overall security posture.
 
-## Education
-- **Universiy of Colorado Boulder**
-  Master of Science in Cybersecurity Engineering
-- **Anna University**
- Bachelor of Engineering in Computer Science 
+
 
 ## Projects
 
