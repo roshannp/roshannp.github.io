@@ -42,6 +42,7 @@ MD5, SHA-256, and SHA-512 hashes
 - Currently preparing for **OSCP**
 
 # Achievements
+- BEST INTERN - **DISH NETWORKS 2022**
 - Amy Barnes-Frey Fellowship **[University of Colorado Boulder]**
 - Captain of College Crickeet Team **[Anna University- Sri Sairam Engineering College]**
 - School People Leader **[Narayana Group of Schools]**
