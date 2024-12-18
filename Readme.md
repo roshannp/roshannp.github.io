@@ -1,5 +1,7 @@
 # Roshan's portfolio
 
+## OFFENSIVE SECURITY NOTES
+- https://www.notion.so/OSCP-1035e684cb5580b490e8c8e417d6843b?pvs=4
 ## Education
 
 ### Universiy of Colorado Boulder
