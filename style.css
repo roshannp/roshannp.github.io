@@ -57,15 +57,16 @@ body {
     animation: fadeIn 3s ease-in-out;
 }
 
-/* Scroll Down Arrow */
+/* Scroll Down Arrow (Lower Position) */
 .scroll-down {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px; /* Move it slightly lower */
     left: 50%;
     transform: translateX(-50%);
     font-size: 2em;
     animation: bounce 1.5s infinite;
 }
+
 
 .scroll-down a {
     text-decoration: none;
