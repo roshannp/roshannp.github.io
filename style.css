@@ -16,6 +16,7 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden; /* Prevents extra space issues */
 }
 
 /* Profile Picture (Behind Name) */
@@ -23,15 +24,14 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 300px;  /* Adjust size */
-    height: 300px;
+    width: 350px;  /* Adjust size */
+    height: 350px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.15;  /* Makes it slightly faded */
+    opacity: 0.12;  /* Slightly faded */
     object-fit: cover;  /* Ensures proper cropping */
     z-index: -1;  /* Pushes it behind the text */
 }
-
 
 /* Text Container */
 .container {
@@ -42,7 +42,7 @@ body {
 
 /* Main Name */
 .title {
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -55,6 +55,27 @@ body {
     margin-top: 10px;
     opacity: 0.8;
     animation: fadeIn 3s ease-in-out;
+}
+
+/* Scroll Down Arrow */
+.scroll-down {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-down a {
+    text-decoration: none;
+    color: #00ffcc;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
 }
 
 /* Sections */
@@ -75,6 +96,7 @@ h2 {
 .skills-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 20px;
 }
@@ -86,6 +108,7 @@ h2 {
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    width: 300px;
 }
 
 .red-team {
@@ -98,7 +121,7 @@ h2 {
     color: white;
 }
 
-/* Links */
+/* Contact Links */
 a {
     color: #00ffcc;
     text-decoration: none;
