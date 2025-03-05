@@ -28,8 +28,8 @@ body {
 
 /* Profile Picture (Left Side) */
 .profile-pic {
-    width: 180px;  /* Smaller image */
-    height: 180px;
+    width: 380px;  /* Smaller image */
+    height: 380px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid #00ffcc;
