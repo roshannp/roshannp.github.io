@@ -23,12 +23,14 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 100px;
-    height: 100px;
+    width: 80px;  /* Reduce size */
+    height: 80px;
     border-radius: 50%;
-    border: 3px solid #00ffcc;
+    border: 2px solid #00ffcc;
+    object-fit: cover;  /* Ensures the image is cropped correctly */
     box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
+
 
 /* Text Container */
 .container {
