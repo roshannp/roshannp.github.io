@@ -291,3 +291,28 @@ h2 {
     box-shadow: 0px 0px 10px rgba(0, 255, 204, 0.5);
 }
 
+/* Accomplishments Section */
+#accomplishments {
+    padding: 50px;
+    background: #111;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Section Headers */
+#accomplishments h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+/* Accomplishments Text */
+#accomplishments p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+
