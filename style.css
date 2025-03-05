@@ -57,27 +57,30 @@ body {
     animation: fadeIn 3s ease-in-out;
 }
 
-/* Scroll Down Arrow (Centered and Larger) */
+/* Scroll Down Arrow - Large and Centered */
 .scroll-down {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;  /* Adjust to move lower */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 3em;
+    font-size: 3em;  /* Make it bigger */
     color: #00ffcc;
     animation: bounce 1.5s infinite;
 }
 
+/* Ensure the arrow is the correct size and color */
 .scroll-down a {
     text-decoration: none;
+    font-size: 1.5em;
     color: #00ffcc;
 }
 
-/* Bounce Animation */
+/* Smooth bounce animation */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
 }
+
 
 /* Sections */
 section {
