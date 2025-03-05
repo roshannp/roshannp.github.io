@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('hacker-bg.jpg') no-repeat center center fixed;
+    background: url('profile.jpg') no-repeat center center fixed;
     background-size: cover;
     position: relative;
 }
@@ -28,7 +28,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 /* Text Overlay */
@@ -53,6 +53,27 @@ body {
     margin-top: 10px;
     opacity: 0.8;
     animation: fadeIn 3s ease-in-out;
+}
+
+/* Scroll Down Arrow */
+.scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2em;
+    animation: bounce 1.5s infinite;
+}
+
+.scroll-down a {
+    text-decoration: none;
+    color: #00ffcc;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
 }
 
 /* Sections (Skills, Education, etc.) */
