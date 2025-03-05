@@ -57,30 +57,30 @@ body {
     animation: fadeIn 3s ease-in-out;
 }
 
-/* Scroll Down Arrow - Large and Centered */
+/* Scroll Down Arrow - Large and Properly Centered */
 .scroll-down {
     position: absolute;
-    bottom: 50px;  /* Adjust to move lower */
+    bottom: 60px;  /* Adjust height */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 3em;  /* Make it bigger */
+    font-size: 3em;  /* Bigger size */
     color: #00ffcc;
     animation: bounce 1.5s infinite;
 }
 
-/* Ensure the arrow is the correct size and color */
+/* Arrow Link Styling */
 .scroll-down a {
     text-decoration: none;
     font-size: 1.5em;
     color: #00ffcc;
+    display: inline-block;
 }
 
-/* Smooth bounce animation */
+/* Smooth Bounce Animation */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
 }
-
 
 /* Sections */
 section {
