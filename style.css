@@ -63,26 +63,18 @@ body {
 }
 
 
-/* Scroll Down Arrow - Large and Properly Centered */
+/* Scroll Down Arrow - Bigger and Proper */
 .scroll-down {
     position: absolute;
-    bottom: 60px;  /* Adjust height */
+    bottom: 60px;  /* Move slightly lower */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 3em;  /* Bigger size */
+    font-size: 3em;  /* Increase size */
     color: #00ffcc;
     animation: bounce 1.5s infinite;
 }
 
-/* Arrow Link Styling */
-.scroll-down a {
-    text-decoration: none;
-    font-size: 1.5em;
-    color: #00ffcc;
-    display: inline-block;
-}
-
-/* Smooth Bounce Animation */
+/* Bounce Animation */
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(10px); }
