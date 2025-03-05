@@ -36,14 +36,6 @@ body {
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
 }
 
-/* Text Box for Name & Position */
-.text-container {
-    background: rgba(0, 0, 0, 0.8); /* Black box for contrast */
-    padding: 15px 20px;
-    border-radius: 8px;
-    display: inline-block;
-}
-
 /* Bigger Name */
 .title {
     font-size: 3.5em;  /* Increased from 2.5em */
