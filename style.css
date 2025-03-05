@@ -170,3 +170,39 @@ a:hover {
 .btn i {
     font-size: 1.2em;
 }
+
+/* Publications Section */
+#publications {
+    padding: 50px;
+    background: #111;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+/* Publications Text */
+#publications p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin: 5px 0;
+}
+
+/* Publication Link Styling */
+#publications a {
+    color: #00ffcc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#publications a:hover {
+    color: #fff;
+}
+
