@@ -18,17 +18,18 @@ body {
     position: relative;
 }
 
-/* Small Circular Profile Picture */
+/* Profile Picture (Behind Name) */
 .profile-pic {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 80px;  /* Reduce size */
-    height: 80px;
+    top: 50%;
+    left: 50%;
+    width: 300px;  /* Adjust size */
+    height: 300px;
     border-radius: 50%;
-    border: 2px solid #00ffcc;
-    object-fit: cover;  /* Ensures the image is cropped correctly */
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+    transform: translate(-50%, -50%);
+    opacity: 0.15;  /* Makes it slightly faded */
+    object-fit: cover;  /* Ensures proper cropping */
+    z-index: -1;  /* Pushes it behind the text */
 }
 
 
