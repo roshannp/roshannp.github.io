@@ -250,3 +250,44 @@ h2 {
     font-size: 1.5em;
 }
 
+/* Skill Tags Below Buttons */
+.skill-tags {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Skill Tag Boxes */
+.skill-tag {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 2px solid rgba(0, 255, 204, 0.5); /* Transparent Border */
+    background: rgba(0, 255, 204, 0.1); /* Slightly Transparent */
+    color: #00ffcc;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Red Team Tag */
+.red-team {
+    border-color: rgba(255, 0, 0, 0.5);
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff5555;
+}
+
+/* Blue Team Tag */
+.blue-team {
+    border-color: rgba(0, 0, 255, 0.5);
+    background: rgba(0, 0, 255, 0.1);
+    color: #5599ff;
+}
+
+/* Hover Effect */
+.skill-tag:hover {
+    background: rgba(0, 255, 204, 0.3);
+    box-shadow: 0px 0px 10px rgba(0, 255, 204, 0.5);
+}
+
