@@ -16,7 +16,6 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    overflow: hidden; /* Prevents extra space issues */
 }
 
 /* Profile Picture (Behind Name) */
