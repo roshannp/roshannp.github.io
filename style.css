@@ -9,29 +9,28 @@ body {
     overflow-x: hidden;
 }
 
-/* Hero Section (Opening Page) */
+/* Hero Section */
 #hero {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url('profile.jpg') no-repeat center center fixed;
-    background-size: cover;
     position: relative;
 }
 
-/* Dark Overlay */
-#hero::before {
-    content: "";
+/* Small Circular Profile Picture */
+.profile-pic {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #00ffcc;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 
-/* Text Overlay */
+/* Text Container */
 .container {
     position: relative;
     text-align: center;
@@ -55,28 +54,7 @@ body {
     animation: fadeIn 3s ease-in-out;
 }
 
-/* Scroll Down Arrow */
-.scroll-down {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2em;
-    animation: bounce 1.5s infinite;
-}
-
-.scroll-down a {
-    text-decoration: none;
-    color: #00ffcc;
-}
-
-/* Bounce Animation */
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
-}
-
-/* Sections (Skills, Education, etc.) */
+/* Sections */
 section {
     padding: 50px;
     background: #111;
