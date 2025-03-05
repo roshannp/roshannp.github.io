@@ -36,21 +36,20 @@ body {
     box-shadow: 0 0 15px rgba(0, 255, 204, 0.5);
 }
 
-/* Bigger Name */
+/* Name & Title */
 .title {
-    font-size: 3.5em;  /* Increased from 2.5em */
+    font-size: 3.5em;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #00ffcc;
+    text-shadow: 0px 0px 10px rgba(0, 255, 204, 0.8); /* Subtle glow */
 }
 
-/* Bigger Subtitle */
 .subtitle {
-    font-size: 1.5em;  /* Increased from 1.2em */
+    font-size: 1.5em;
     color: #00ffcc;
 }
-
 
 /* Scroll Down Arrow - Bigger & More Visible */
 .scroll-down {
