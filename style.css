@@ -69,18 +69,27 @@ body {
     50% { transform: translateY(15px); }
 }
 
-/* Sections */
+/* Section Styling */
 section {
     padding: 50px;
     background: #111;
-    margin: 10px 0;
+    margin: 20px 0;
+    border-radius: 10px;
 }
 
-/* Section Titles */
+/* Section Headers */
 h2 {
     font-size: 2em;
     text-transform: uppercase;
     color: #00ffcc;
+    margin-bottom: 15px;
+}
+
+/* Entries for Education, Experience, Certifications */
+section p {
+    font-size: 1.2em;
+    color: #ddd;
+    margin: 5px 0;
 }
 
 /* Skill Cards */
