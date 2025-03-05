@@ -7,20 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
         glitchText.style.textShadow = Math.random() > 0.5 ? "2px 2px 5px #ff0000, -2px -2px 5px #0000ff" : "-2px -2px 5px #ff0000, 2px 2px 5px #0000ff";
     }, 500);
 
-    // Matrix Rain Effect
-    const canvas = document.createElement("canvas");
-    document.body.prepend(canvas);
-    const ctx = canvas.getContext("2d");
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    const characters = "01 10 110 001 101 010 011 100 0001 0110";
-    const charArray = characters.split("");
-    const fontSize = 16;
-    const columns = canvas.width / fontSize;
-    const drops = Array(Math.floor(columns)).fill(1);
-
     function drawMatrix() {
         ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
