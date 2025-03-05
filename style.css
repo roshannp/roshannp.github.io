@@ -15,61 +15,56 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     position: relative;
 }
 
-/* Profile Picture (Behind Name) */
+/* Hero Content (Image + Text Side by Side) */
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Profile Picture (Left Side) */
 .profile-pic {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;  /* Adjust size */
-    height: 300px;
+    width: 180px;  /* Smaller image */
+    height: 180px;
     border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.15;  /* Makes it slightly faded */
-    object-fit: cover;  /* Ensures proper cropping */
-    z-index: -1;  /* Pushes it behind the text */
+    object-fit: cover;
+    border: 3px solid #00ffcc;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
 }
 
-/* Dark Background Overlay for Name */
-.container {
-    position: relative;
-    text-align: center;
-    z-index: 1;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.6); /* Darker box behind text */
-    border-radius: 10px;
+/* Text Box for Name & Position */
+.text-container {
+    background: rgba(0, 0, 0, 0.8); /* Black box for contrast */
+    padding: 15px 20px;
+    border-radius: 8px;
     display: inline-block;
 }
 
-/* Main Name */
+/* Name & Title */
 .title {
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #00ffcc;  /* Bright hacker green */
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Subtitle */
-.subtitle {
-    font-size: 1.5em;
-    margin-top: 10px;
-    opacity: 0.9;
     color: #00ffcc;
-    animation: fadeIn 3s ease-in-out;
 }
 
+.subtitle {
+    font-size: 1.2em;
+    color: #00ffcc;
+}
 
-/* Scroll Down Arrow - Bigger and Proper */
+/* Scroll Down Arrow - Smaller */
 .scroll-down {
     position: absolute;
-    bottom: 60px;  /* Move slightly lower */
+    bottom: 20px;  /* Lowered */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 3em;  /* Increase size */
+    font-size: 1.5em;  /* Smaller */
     color: #00ffcc;
     animation: bounce 1.5s infinite;
 }
