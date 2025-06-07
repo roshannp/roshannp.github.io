@@ -3,301 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Font Awesome for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Roshan Nellore Prasad | Security Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-<!-- Navigation Bar -->
-<nav class="navbar">
-    <div class="logo">RNP</div>
-    <div class="nav-links">
-        <a href="#hero" class="nav-link">Home</a>
-        <a href="#blogs" class="nav-link">Blogs</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#technical-skills" class="nav-link">Skills</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-    </div>
-    <div class="menu-toggle">
-        <i class="fas fa-bars"></i>
-    </div>
-</nav>
-
-<!-- Hero Section -->
-<section id="hero">
-    <div class="hero-content">
-        <div class="name-container">
-            <h1 class="title">Roshan Nellore Prasad</h1>
-            <p class="subtitle">Security Engineer</p>
+    <!-- Main Layout with Sidebar -->
+    <div class="main-layout">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="profile-container">
+                    <img src="https://raw.githubusercontent.com/roshannp/roshannp.github.io/main/Grad.JPG" alt="Roshan Nellore Prasad" class="profile-pic">
+                    <h1 class="sidebar-name">Roshan Nellore Prasad</h1>
+                    <p class="sidebar-title">Security Engineer</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://github.com/roshannp" class="social-icon" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/roshannp/" class="social-icon" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:np.roshan@outlook.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Main Content Section -->
+        <main class="main-content">
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h2>About</h2>
+                <p>Results-driven Security Engineer with a strong foundation in Cloud security, Network Security, Pentesting, automation, and vulnerability management. Experienced in securing AWS environments, implementing infrastructure-as-code (IaC) with Terraform, and integrating security best practices into the software development lifecycle.</p>
+                <p>Proven expertise in identifying and remediating vulnerabilities, enhancing security for CI/CD pipelines, and automating security controls across cloud and on-premises infrastructure. Skilled in working with APIs, security automation scripting using Python, and securing containerized and serverless applications.</p>
+            </section>
             
-            <div class="skill-tags">
-                <div class="skill-tag red-team">🔴 Offensive Security: Penetration Testing, Threat Hunting, Exploit Research</div>
-                <div class="skill-tag blue-team">🔵 Defensive Security: Network Security, Infrastructure Security, Incident Response</div>
-            </div>
-        </div>
-        <div class="profile-container">
-            <img src="https://raw.githubusercontent.com/roshannp/roshannp.github.io/main/Grad.JPG" alt="Roshan Nellore Prasad" class="profile-pic">
-            <div class="social-icons">
-                <a href="https://github.com/roshannp" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/roshannp/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:np.roshan@outlook.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
+            <!-- Blogs Section -->
+            <section id="blogs" class="content-section">
+                <h2>Blogs</h2>
+                <div class="projects-container">
+                    <!-- Blog 1 - OSCP Notes -->
+                    <div class="project-card blog-card">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3>OSCP Study Notes</h3>
+                                <div class="project-tags">
+                                    <span class="project-tag">Offensive Security</span>
+                                    <span class="project-tag">Penetration Testing</span>
+                                    <span class="project-tag">Certification</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://www.notion.so/OSCP-1035e684cb5580b490e8c8e417d6843b?source=copy_link" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Comprehensive study notes and resources for the Offensive Security Certified Professional (OSCP) certification. Includes methodologies, tools, techniques, and practical examples from my preparation journey.</p>
+                        <div class="project-features">
+                            <div class="feature"><i class="fas fa-check-circle"></i> Penetration testing methodologies</div>
+                            <div class="feature"><i class="fas fa-check-circle"></i> Exploitation techniques and walkthroughs</div>
+                            <div class="feature"><i class="fas fa-check-circle"></i> Privilege escalation strategies</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <h2>Projects</h2>
+                <div class="projects-container">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <div class="project-title">
+                                <h3>Data Carver and Password Cracker</h3>
+                                <div class="project-tags">
+                                    <span class="project-tag">Python</span>
+                                    <span class="project-tag">Hex Fiend</span>
+                                    <span class="project-tag">Cryptography</span>
+                                </div>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/roshannp/Digital-Forensics" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <p class="project-description">Implemented a Python algorithm for efficient extraction of JPEG, PNG, and PDF files from large hexadecimal dump files, providing results in under 20 seconds. Achieving an 80% improvement over manual extraction.</p>
+                        <div class="project-features">
+                            <div class="feature"><i class="fas fa-check-circle"></i> Efficient file extraction from hexadecimal dumps</div>
+                            <div class="feature"><i class="fas fa-check-circle"></i> Python-based brute force and dictionary password cracker</div>
+                            <div class="feature"><i class="fas fa-check-circle"></i> Support for MD5, SHA-256, and SHA-512 hash decoding</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Experience Section -->
+            <section id="experience" class="content-section">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Security Engineer</h3>
+                        <p class="experience-company">Medline Industries</p>
+                        <p class="experience-date">Jan 2024 - Present</p>
+                    </div>
+                    <p>Implemented and maintained AWS security controls using Terraform, enhancing the security posture of cloud infrastructure. Automated security monitoring and alerting using Python scripts and AWS Lambda functions.</p>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Security Engineer</h3>
+                        <p class="experience-company">Dish Network</p>
+                        <p class="experience-date">June 2023 - Jan 2024</p>
+                    </div>
+                    <p>Developed and implemented security solutions for IoT devices in DISH's 5G network. Created automated security testing scripts to validate firmware security.</p>
+                </div>
+            </section>
+            
+            <!-- Education Section -->
+            <section id="education" class="content-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>University of Colorado Boulder</h3>
+                    <p class="degree">M.S. in Cybersecurity Engineering</p>
+                    <p class="date">August 2021 - May 2023</p>
+                </div>
+                <div class="education-item">
+                    <h3>Anna University, Chennai</h3>
+                    <p class="degree">B.E. in Computer Science</p>
+                    <p class="date">August 2017 - May 2021</p>
+                </div>
+            </section>
+            
+            <!-- Certifications Section -->
+            <section id="certifications" class="content-section">
+                <h2>Certifications</h2>
+                <div class="cert-container">
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-details">
+                            <h3>AWS Certified Security - Specialty</h3>
+                            <p>Amazon Web Services | 2023</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <i class="fas fa-certificate"></i>
+                        <div class="cert-details">
+                            <h3>Certified Ethical Hacker (CEH)</h3>
+                            <p>EC-Council | 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Publications Section -->
+            <section id="publications" class="content-section">
+                <h2>Publications</h2>
+                <p>📄 <strong>A Bird's Eye View on Lightweight Scalable Blockchain in the Platform of IoT</strong></p>
+                <p>Published in: <strong>International Research Journal of Engineering and Technology (IRJET)</strong>, 2020</p>
+                <p>🔗 <a href="https://www.irjet.net/archives/V7/i9/IRJET-V7I9500.pdf" target="_blank">Read the Paper</a></p>
+            </section>
+            
+            <!-- Accomplishments Section -->
+            <section id="accomplishments" class="content-section">
+                <h2>Accomplishments</h2>
+                <p>🏆 <strong>Best Intern - Dish Network (2022)</strong> <br> Won the prestigious DISH-CPAW Winning award for upholding company values among 75 Summer Interns.</p>
+                <p>🎓 <strong>Amy Barnes Frey Fellowship</strong> (Feb 2023) <br> <em>University of Colorado Boulder</em></p>
+            </section>
+            
+            <!-- Contact Section -->
+            <section id="contact" class="content-section">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:np.roshan@outlook.com">np.roshan@outlook.com</a></p>
+            </section>
+        </main>
     </div>
 
-    
-    <!-- Scroll Down Arrow -->
-    <div class="scroll-down">
-        <a href="#about">&#x2B07;</a>  <!-- Down Arrow -->
-    </div>
-</section>
-
-<!-- Blogs Section -->
-<section id="blogs">
-    <h2>Blogs</h2>
-    <div class="projects-container">
-        <!-- Blog 1 - OSCP Notes -->
-        <div class="project-card blog-card">
-            <div class="project-header">
-                <div class="project-title">
-                    <h3>OSCP Study Notes</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">Offensive Security</span>
-                        <span class="project-tag">Penetration Testing</span>
-                        <span class="project-tag">Certification</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://www.notion.so/OSCP-1035e684cb5580b490e8c8e417d6843b?source=copy_link" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <p class="project-description">Comprehensive study notes and resources for the Offensive Security Certified Professional (OSCP) certification. Includes methodologies, tools, techniques, and practical examples from my preparation journey.</p>
-            <div class="project-features">
-                <div class="feature"><i class="fas fa-check-circle"></i> Penetration testing methodologies</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Exploitation techniques and walkthroughs</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Privilege escalation strategies</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- About Me Section -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>Results-driven Security Engineer with a strong foundation in Cloud security, Network Security, Pentesting, automation, and vulnerability management. Experienced in securing AWS environments, implementing infrastructure-as-code (IaC) with Terraform, and integrating security best practices into the software development lifecycle. Proven expertise in identifying and remediating vulnerabilities, enhancing security for CI/CD pipelines, and automating security controls across cloud and on-premises infrastructure.
-Skilled in working with APIs, security automation scripting using Python, and securing containerized and serverless applications. Adept at AWS IAM, HashiCorp Vault, Okta integrations, and database credential rotation to strengthen access control and secrets management. Strong background in offensive security techniques, including penetration testing and vulnerability exploitation, with a passion for secure-by-default development.
-Holding a Master’s in Cybersecurity Engineering from the University of Colorado Boulder, with hands-on experience in infrastructure security at Medline and securing IoT environments at Dish Networks. Actively pursuing the OSCP certification to further enhance offensive security skills.
-Known for efficient problem-solving, optimizing security workflows, and mentoring teams on best practices. Enthusiastic about tackling complex security challenges and driving scalable, automated security solutions in cloud-native environments.
-
-</p>
-</section>
-
-<!-- Technical Skills Section -->
-<section id="technical-skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-container">
-        <div class="skill"><i class="fab fa-python"></i> Python</div>
-        <div class="skill"><i class="fas fa-terminal"></i> Bash & PowerShell</div>
-        <div class="skill"><i class="fab fa-aws"></i> AWS</div>
-        <div class="skill"><i class="fas fa-database"></i> MySQL & MSSQL</div>
-        <div class="skill"><i class="fas fa-cubes"></i> Terraform</div>
-        <div class="skill"><i class="fas fa-user-secret"></i> HashiCorp Vault</div>
-        <div class="skill"><i class="fas fa-shield-alt"></i> Palo Alto Firewalls</div>
-        <div class="skill"><i class="fas fa-globe"></i> Zscaler (ZPA & ZIA)</div>
-        <div class="skill"><i class="fas fa-bug"></i> Burp Suite & Nessus</div>
-        <div class="skill"><i class="fas fa-network-wired"></i> Networking (TCP/IP, OSI, OSPF)</div>
-        <div class="skill"><i class="fas fa-user-lock"></i> Security Standards (NIST, CIS, MITRE ATT&CK, PCI DSS)</div>
-    </div>
-</section>
-    
-    <!-- More Sections (Education, Experience, Certs, Contact) -->
-<!-- Education Section -->
-<section id="education">
-    <h2>Education</h2>
-    <p>🎓 <strong>Master’s in Cybersecurity Engineering (August 2021 - May 2023) </strong> - CU Boulder</p>
-    <p>🎓 <strong>Bachelor of Engineering in Computer Science (August 2017 - May 2021) </strong> - Anna University, Chennai</p>
-</section>
-
-<!-- Experience Section -->
-<section id="experience">
-    <h2>Experience</h2>
-    <p>🛡️ <strong>Security Engineer</strong> - Medline Industries (Jan 2024 - Present)</p>
-    <p>🛡️ <strong>Security Engineer</strong> - Dish Network (June 2023 - Jan 2024)</p>
-    <p>💻 <strong>Security Engineer Intern</strong> - Dish Network (May 2022 - August 2022)</p>
-</section>
-
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <div class="projects-container">
-        <!-- Project 1 -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-title">
-                    <h3>Data Carver and Password Cracker</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">Hex Fiend</span>
-                        <span class="project-tag">Cryptography</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/roshannp/Digital-Forensics" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <p class="project-description">Implemented a Python algorithm for efficient extraction of JPEG, PNG, and PDF files from large hexadecimal dump files, providing results in under 20 seconds. Achieving an 80% improvement over manual extraction.</p>
-            <div class="project-features">
-                <div class="feature"><i class="fas fa-check-circle"></i> Efficient file extraction from hexadecimal dumps</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Python-based brute force and dictionary password cracker</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Support for MD5, SHA-256, and SHA-512 hash decoding</div>
-            </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-title">
-                    <h3>Buggy Web-App Exploitation</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">Penetration Testing</span>
-                        <span class="project-tag">N-map</span>
-                        <span class="project-tag">Burp Suite</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/roshannp/Web-Application-Pentesting/" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <p class="project-description">Exploited BuggyWebApplication to identify and attack a wide range of web application vulnerabilities, including OWASP Top 10 and meticulously documented remediation strategies for a comprehensive security assessment.</p>
-            <div class="project-features">
-                <div class="feature"><i class="fas fa-check-circle"></i> Comprehensive vulnerability assessment</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> OWASP Top 10 exploitation techniques</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Detailed remediation strategies</div>
-            </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-title">
-                    <h3>Reentrancy Attack Analysis</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">Smart Contracts</span>
-                        <span class="project-tag">Blockchain</span>
-                        <span class="project-tag">Security</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/roshannp/Reentrancy" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <p class="project-description">Analysis of Reentrancy Attack Vulnerabilities in Smart Contracts. This project consists of CryptoMask (wallet) and Intruder's Smart Contract, demonstrating exploitation of vulnerabilities in CryptoMask and securing it.</p>
-            <div class="project-features">
-                <div class="feature"><i class="fas fa-check-circle"></i> Vulnerability exploitation demonstration</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Implementation of Reentrancy Guard</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> State Update security implementation</div>
-            </div>
-        </div>
-
-        <!-- Project 4 - AWS OCR Solution -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-title">
-                    <h3>PDF Contract OCR Solution</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">AWS</span>
-                        <span class="project-tag">Python</span>
-                        <span class="project-tag">OCR</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/roshannp/AWS-Projects/tree/main" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <p class="project-description">Python-based OCR solution to extract text from PDF contracts, enhancing text recognition accuracy by 40% and enabling faster data extraction for contract analysis in a telecommunications R&D environment.</p>
-            <div class="project-features">
-                <div class="feature"><i class="fas fa-check-circle"></i> 40% improvement in text recognition accuracy</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Automated extraction from PDF contracts</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Optimized for telecommunications industry documents</div>
-            </div>
-        </div>
-
-        <!-- Project 5 - AWS Data Pipeline -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-title">
-                    <h3>Automated AWS Data Pipeline</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">AWS Lambda</span>
-                        <span class="project-tag">Athena</span>
-                        <span class="project-tag">Python</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/roshannp/AWS-Projects/tree/main" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <p class="project-description">Automated data pipeline using Python, AWS Lambda, and Athena to extract key fields from large JSON files reducing manual data processing time by 60% and improving data accessibility.</p>
-            <div class="project-features">
-                <div class="feature"><i class="fas fa-check-circle"></i> 60% reduction in manual data processing time</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Serverless architecture with AWS Lambda</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> SQL-based analytics with Amazon Athena</div>
-            </div>
-        </div>
-
-        <!-- Project 6 - Sensitive Data Pipeline -->
-        <div class="project-card">
-            <div class="project-header">
-                <div class="project-title">
-                    <h3>Privacy-Preserving Data Pipeline</h3>
-                    <div class="project-tags">
-                        <span class="project-tag">AWS</span>
-                        <span class="project-tag">Data Privacy</span>
-                        <span class="project-tag">Analytics</span>
-                    </div>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/roshannp/AWS-Projects/tree/main" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-            <p class="project-description">Designed and implemented a complete data pipeline on AWS to protect sensitive customer viewing data while still enabling useful business insights for a Dish Network-like environment to analyze regional viewing trends without exposing individual habits.</p>
-            <div class="project-features">
-                <div class="feature"><i class="fas fa-check-circle"></i> Privacy-preserving data aggregation</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Regional trend analysis without individual exposure</div>
-                <div class="feature"><i class="fas fa-check-circle"></i> Secure AWS architecture for sensitive data</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!-- Certifications Section -->
-<section id="certifications">
-    <h2>Certifications</h2>
-    <p>✅ <strong>Certified Ethical Hacker (CEH v12)</strong> - EC-Council</p>
-    <p>✅ <strong>CompTIA Security+</strong> - CompTIA</p>
-    <p>🛠️ <strong>Offensive Security Certified Professional (OSCP) - In Progress</strong></p>
-</section>
-
-    <!-- Publications Section -->
-<section id="publications">
-    <h2>Publications</h2>
-    <p>📄 <strong>A Bird’s Eye View on Lightweight Scalable Blockchain in the Platform of IoT</strong></p>
-    <p>Published in: <strong>International Research Journal of Engineering and Technology (IRJET)</strong>, 2020</p>
-    <p>🔗 <a href="https://www.irjet.net/archives/V7/i9/IRJET-V7I9500.pdf" target="_blank">Read the Paper</a></p>
-</section>
-
-    <!-- Accomplishments Section -->
-<section id="accomplishments">
-    <h2>Accomplishments</h2>
-    <p>🏆 <strong>Best Intern - Dish Network (2022)</strong></p>  <br> Won the prestigious DISH-CPAW Winning award for upholding company values among 75 Summer Interns.</p>
-    <p>🎓 <strong>Amy Barnes Frey Fellowship</strong> (Feb 2023) <br> <em>University of Colorado Boulder</em></p>
-</section>
-
-<section id="contact"><h2>Contact</h2><p>Email: <a href="mailto:np.roshan@outlook.com">np.roshan@outlook.com</a></p></section>
+    <script>
+        // JavaScript for mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    navLinks.classList.toggle('active');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
