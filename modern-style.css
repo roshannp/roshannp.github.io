@@ -139,6 +139,56 @@ a:hover {
     box-shadow: var(--shadow-md);
 }
 
+/* Sidebar Education Styles */
+.sidebar-education {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.sidebar-section-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.sidebar-education-item {
+    margin-bottom: 1.25rem;
+    padding: 0.75rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar-education-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.education-school {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0.25rem;
+}
+
+.education-degree {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.25rem;
+}
+
+.education-year {
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    background-color: rgba(99, 102, 241, 0.2);
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 12px;
+    margin-top: 0.25rem;
+}
+
 .sidebar-section {
     width: 100%;
     margin-top: 1.5rem;
@@ -321,53 +371,65 @@ a:hover {
 }
 
 /* Experience Section */
-.experience-container {
+.experience-timeline {
     position: relative;
     padding-left: 2rem;
 }
 
-.experience-container::before {
+.experience-timeline::before {
     content: '';
     position: absolute;
+    left: 0;
     top: 0;
-    left: 8px;
-    height: 100%;
-    width: 2px;
-    background-color: var(--border-color);
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--accent-color));
+    border-radius: 3px;
 }
 
 .experience-item {
     position: relative;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
 }
 
 .experience-item::before {
     content: '';
     position: absolute;
-    top: 5px;
     left: -2rem;
-    width: 16px;
-    height: 16px;
+    top: 1.5rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: var(--primary-color);
-    border: 3px solid var(--background-color);
+    border: 3px solid white;
     box-shadow: var(--shadow-sm);
+}
+
+.experience-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
 }
 
 .experience-header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
     margin-bottom: 0.5rem;
 }
 
-.company {
+.experience-header h3 {
     font-weight: 600;
     font-size: 1.1rem;
-    color: var(--text-color);
+    color: var(--dark-text);
+    margin-bottom: 0.5rem;
 }
 
-.position {
+.experience-company {
     font-weight: 500;
     color: var(--primary-color);
     margin-bottom: 0.5rem;
@@ -393,30 +455,38 @@ a:hover {
 
 .responsibilities li::before {
     content: '•';
-    position: absolute;
-    left: -1.25rem;
     color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.experience-date {
+    font-size: 0.85rem;
+    color: var(--light-text);
+    display: inline-block;
+    background-color: rgba(99, 102, 241, 0.1);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
 }
 
 /* Education Section */
 .education-item {
-    margin-bottom: 1.5rem;
-    padding: 1.25rem;
-    border-radius: 8px;
-    background-color: rgba(99, 102, 241, 0.03);
-    border: 1px solid var(--border-color);
-    transition: all 0.3s ease;
+margin-bottom: 1.5rem;
+padding: 1.25rem;
+border-radius: 8px;
+background-color: rgba(99, 102, 241, 0.03);
+border: 1px solid var(--border-color);
+transition: all 0.3s ease;
 }
 
 .education-item:hover {
-    box-shadow: var(--shadow-md);
-    border-color: var(--primary-color);
+box-shadow: var(--shadow-md);
+border-color: var(--primary-color);
 }
 
 .degree {
-    font-weight: 600;
-    color: var(--primary-color);
-    margin-top: 0.25rem;
+font-weight: 600;
+color: var(--primary-color);
+margin-top: 0.25rem;
 }
 
 .date {
