@@ -480,6 +480,19 @@ a:hover {
     border-radius: 20px;
 }
 
+.cert-link {
+    display: block;
+    margin-top: 0.75rem;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.cert-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .sidebar {
