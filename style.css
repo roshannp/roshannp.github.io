@@ -713,3 +713,21 @@ footer a:hover {
         width: 70%;
     }
 }
+
+/* Blog Card Styles */
+.blog-card {
+    background: rgba(40, 30, 50, 0.6); /* Slightly different background */
+    border: 1px solid rgba(180, 100, 255, 0.15); /* Purple-ish border */
+}
+
+.blog-card::before {
+    background: linear-gradient(90deg, #8e2de2 0%, #4a00e0 100%); /* Purple gradient */
+}
+
+.blog-card .project-tag {
+    background: rgba(140, 80, 200, 0.2); /* Purple-ish tag background */
+}
+
+.blog-card .feature i {
+    color: #8e2de2; /* Purple icon color */
+}
