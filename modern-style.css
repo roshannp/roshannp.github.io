@@ -113,9 +113,10 @@ a:hover {
 
 .social-icons {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
     justify-content: center;
-    gap: 1.25rem;
-    margin-top: 1rem;
 }
 
 .social-icon {
