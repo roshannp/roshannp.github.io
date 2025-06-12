@@ -616,3 +616,39 @@ margin-top: 0.25rem;
         margin-top: 0.5rem;
     }
 }
+/* Top Navbar Styling */
+.top-navbar {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.top-navbar nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #00ffc3;
+    text-decoration: underline;
+}
