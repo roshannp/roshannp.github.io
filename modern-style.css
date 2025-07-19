@@ -886,9 +886,12 @@ section h2 {
     transition: all 0.3s ease;
     border: 1px solid var(--border-color);
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     cursor: pointer;
     overflow: hidden;
+    gap: 1rem;
 }
 
 .project-card:hover {
@@ -897,19 +900,30 @@ section h2 {
 }
 
 .project-card-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
     z-index: 1;
     text-decoration: none;
     cursor: pointer;
     display: block;
+    margin-bottom: 0.5rem;
 }
 
-.project-card-link:hover ~ .project-header .project-title h3,
-.project-card-link:focus ~ .project-header .project-title h3 {
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.project-title h3 {
+    margin: 0 0 0.75rem 0;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.project-card-link:hover .project-title h3 {
     color: var(--primary-color);
 }
 
@@ -1009,25 +1023,34 @@ section h2 {
 }
 
 .project-description {
-    margin-bottom: 1rem;
-    color: var(--text-color);
+    color: var(--text-secondary);
+    margin: 0.5rem 0 1rem 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
 }
 
 .project-features {
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.75rem;
 }
 
 .feature {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
 }
 
 .feature i {
     color: var(--primary-color);
+    margin-top: 0.2rem;
+    flex-shrink: 0;
 }
 
 /* Blog Card Styling */
