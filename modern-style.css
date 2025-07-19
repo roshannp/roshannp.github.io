@@ -872,6 +872,14 @@ section h2 {
     transition: all 0.3s ease;
     border: 1px solid var(--border-color);
     position: relative;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary-color);
 }
 
 .project-card-link {
@@ -882,11 +890,37 @@ section h2 {
     bottom: 0;
     z-index: 1;
     text-decoration: none;
+    cursor: pointer;
+    display: block;
 }
 
 .project-card-link:hover ~ .project-header .project-title h3,
 .project-card-link:focus ~ .project-header .project-title h3 {
     color: var(--primary-color);
+}
+
+/* Make sure the project link doesn't cover the GitHub icon */
+.project-links {
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    background: var(--primary-color);
+    color: white;
 }
 
 .project-card::before {
