@@ -330,8 +330,16 @@ a:hover {
 .main-content {
     margin-left: 260px;
     padding: 2rem;
-    max-width: 1200px;
+    max-width: calc(100% - 260px);
     transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1600px) {
+    .main-content {
+        max-width: 1400px;
+        margin: 0 auto 0 260px;
+    }
 }
 
 /* Adjust main content when sidebar is collapsed */
@@ -345,10 +353,12 @@ section {
     background: var(--card-bg);
     border-radius: 12px;
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin: 0 0 2rem 0;
     box-shadow: var(--shadow-sm);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid var(--border-color);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 section:hover {
@@ -862,6 +872,10 @@ section h2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .project-card {
