@@ -864,28 +864,29 @@ section h2 {
     gap: 1.5rem;
 }
 
-/* Project card container */
 .project-card {
-    display: block;
-    background: var(--card-bg);
+    background-color: var(--card-bg);
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: var(--shadow-sm);
     transition: all 0.3s ease;
     border: 1px solid var(--border-color);
     position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
 }
 
-/* Remove default link styles */
-.project-card,
-.project-card:hover,
-.project-card:focus {
+.project-card-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
     text-decoration: none;
-    color: inherit;
+}
+
+.project-card-link:hover ~ .project-header .project-title h3,
+.project-card-link:focus ~ .project-header .project-title h3 {
+    color: var(--primary-color);
 }
 
 .project-card::before {
@@ -918,10 +919,7 @@ section h2 {
 .project-header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     margin-bottom: 1rem;
-    position: relative;
-    z-index: 2;
 }
 
 .project-title h3 {
@@ -949,9 +947,7 @@ section h2 {
 
 .project-links {
     display: flex;
-    gap: 0.5rem;
-    position: relative;
-    z-index: 3; /* Ensure links stay above the overlay */
+    gap: 0.75rem;
 }
 
 .project-link {
