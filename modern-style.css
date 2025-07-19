@@ -548,28 +548,57 @@ section h2 {
 
 .hero-social {
     display: flex;
-    gap: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
     margin-top: 2rem;
 }
 
 .hero-social a {
     color: var(--light-text);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     transition: all 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
     background: var(--card-bg);
     border: 1px solid var(--border-color);
+    position: relative;
 }
 
 .hero-social a:hover {
     color: var(--primary-color);
     transform: translateY(-2px);
     border-color: var(--primary-color);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.hero-social a::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--card-bg);
+    color: var(--text-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    pointer-events: none;
+}
+
+.hero-social a:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-8px);
 }
 
 /* Hero Image */
