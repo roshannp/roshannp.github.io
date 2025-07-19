@@ -456,27 +456,12 @@ section h2 {
     max-width: 800px;
 }
 
-.hero-title .text-gradient {
-    font-weight: 600;
-    background: linear-gradient(90deg, var(--primary-color), #4f46e5);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
 .hero-description {
     display: inline;
 }
 
 .text-nowrap {
     white-space: nowrap;
-}
-
-.text-gradient {
-    background: linear-gradient(90deg, #4B5563 0%, #1F2937 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .text-accent {
