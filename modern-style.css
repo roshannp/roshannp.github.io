@@ -165,20 +165,19 @@ a:hover {
     overflow: hidden;
 }
 
-.profile-pic::before {
+.profile-image-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, transparent, rgba(99, 102, 241, 0.1), transparent);
-    transform: translateX(-100%);
-    transition: 0.6s;
-}
-
-.profile-pic:hover::before {
-    transform: translateX(100%);
+    background: linear-gradient(135deg, #F3F4F6 0%, #E5E7EB 100%);
+    border-radius: 1rem;
+    z-index: 1;
+    opacity: 0.9;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: rotate(0deg) scale(0.98);
 }
 
 .profile-pic:hover {
@@ -449,7 +448,7 @@ section h2 {
 }
 
 .text-gradient {
-    background: linear-gradient(90deg, var(--accent-color) 0%, var(--primary-color) 100%);
+    background: linear-gradient(90deg, #4B5563 0%, #1F2937 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -585,20 +584,27 @@ section h2 {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
+    border-radius: 1rem;
+    background: #fff;
+    padding: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .profile-image {
     width: 100%;
     height: auto;
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     position: relative;
     z-index: 2;
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    transform-style: preserve-3d;
-    will-change: transform;
+    transition: all 0.3s ease;
     object-fit: cover;
     aspect-ratio: 3/4;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.profile-image:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .profile-image-wrapper:hover .profile-image {
