@@ -1,10 +1,10 @@
 /* General Styles */
 :root {
     /* Light Theme */
-    --primary-color: #7C3AED; /* Purple */
-    --primary-hover: #6D28D9; /* Darker purple */
-    --secondary-color: #8B5CF6; /* Lighter purple */
-    --accent-color: #EC4899; /* Pink accent */
+    --primary-color: #2563EB; /* Deep Blue */
+    --primary-hover: #1D4ED8; /* Darker Blue */
+    --secondary-color: #3B82F6; /* Lighter Blue */
+    --accent-color: #60A5FA; /* Sky Blue accent */
     --text-color: #1f2937;
     --text-secondary: #4b5563;
     --light-text: #6b7280;
@@ -427,7 +427,7 @@ section h2 {
 
 .hero-badge {
     display: inline-block;
-    background: linear-gradient(90deg, rgba(124, 58, 237, 0.1) 0%, rgba(236, 72, 153, 0.1) 100%);
+    background: linear-gradient(90deg, rgba(37, 99, 235, 0.1) 0%, rgba(96, 165, 250, 0.1) 100%);
     color: var(--primary-color);
     padding: 0.5rem 1rem;
     border-radius: 100px;
@@ -435,7 +435,7 @@ section h2 {
     font-weight: 500;
     margin-bottom: 1.5rem;
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(124, 58, 237, 0.2);
+    border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .hero-title {
