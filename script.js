@@ -14,9 +14,20 @@ document.addEventListener("DOMContentLoaded", function() {
         if (theme === 'dark') {
             body.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
+            // Force a reflow to ensure the transition happens
+            void body.offsetHeight;
         } else {
             body.setAttribute('data-theme', 'light');
             localStorage.setItem('theme', 'light');
+            // Force a reflow to ensure the transition happens
+            void body.offsetHeight;
+        }
+        // Update ARIA label for accessibility
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+            themeToggle.setAttribute('aria-label', `Toggle ${newTheme} mode`);
+            themeToggle.setAttribute('aria-pressed', theme === 'dark');
         }
     }
     
@@ -24,21 +35,28 @@ document.addEventListener("DOMContentLoaded", function() {
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
+    // Set initial theme
     if (savedTheme) {
         setTheme(savedTheme);
-    } else if (prefersDark) {
-        setTheme('dark');
     } else {
-        setTheme('light');
+        setTheme(prefersDark ? 'dark' : 'light');
     }
     
     // Toggle theme on button click
     if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
+        themeToggle.addEventListener('click', (e) => {
+            e.preventDefault();
             const currentTheme = body.getAttribute('data-theme');
             setTheme(currentTheme === 'dark' ? 'light' : 'dark');
         });
     }
+    
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (!localStorage.getItem('theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+        }
+    });
     
     // Create mobile menu overlay
     const mobileMenuOverlay = document.createElement('div');
