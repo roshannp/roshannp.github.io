@@ -440,11 +440,13 @@ section h2 {
 .hero-title {
     font-size: 3.5rem;
     font-weight: 800;
-    margin-bottom: 1.5rem;
     line-height: 1.1;
-    color: var(--text-color);
-    background: none;
-    -webkit-text-fill-color: var(--text-color);
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    background: linear-gradient(to right, var(--text-color), var(--primary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .text-gradient {
