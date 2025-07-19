@@ -1,12 +1,44 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Console greeting
-    console.log("%c👋 Welcome to Roshan's Portfolio", "color: #6366f1; font-size: 16px; font-weight: bold;");
+    console.log("%c👋 Welcome to Roshan's Portfolio", "color: #2563eb; font-size: 16px; font-weight: bold;");
     
     // Elements
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
     const nav = document.querySelector('.top-navbar');
     const body = document.body;
+    const themeToggle = document.getElementById('theme-toggle');
+    
+    // Theme Toggle Functionality
+    function setTheme(theme) {
+        if (theme === 'dark') {
+            body.setAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            body.setAttribute('data-theme', 'light');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+    
+    // Check for saved theme preference or use system preference
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else if (prefersDark) {
+        setTheme('dark');
+    } else {
+        setTheme('light');
+    }
+    
+    // Toggle theme on button click
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+    }
     
     // Create mobile menu overlay
     const mobileMenuOverlay = document.createElement('div');
