@@ -1298,13 +1298,12 @@ section h2 {
 
 /* Theme Toggle */
 .theme-toggle {
-    background: none;
-    border: none;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
     color: var(--text-color);
     cursor: pointer;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     padding: 0.5rem;
-    position: relative;
     width: 40px;
     height: 40px;
     display: flex;
@@ -1312,8 +1311,8 @@ section h2 {
     justify-content: center;
     border-radius: 50%;
     transition: all 0.3s ease;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    position: relative;
+    margin-left: 10px;
 }
 
 .theme-toggle:hover {
@@ -1328,21 +1327,29 @@ section h2 {
 
 .theme-toggle i {
     position: absolute;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    font-size: 1.1rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-[data-theme="dark"] .fa-moon,
-[data-theme="light"] .fa-sun {
-    opacity: 0;
-    transform: scale(0.5) rotate(90deg);
+.theme-toggle .fa-sun {
+    display: none;
+    color: #f59e0b; /* Amber-500 */
 }
 
-[data-theme="dark"] .fa-sun,
-[data-theme="light"] .fa-moon {
-    opacity: 1;
-    transform: scale(1) rotate(0);
-    transform: rotate(0);
+.theme-toggle .fa-moon {
+    display: block;
+    color: #4b5563; /* Gray-600 */
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun {
+    display: block;
+    color: #fbbf24; /* Amber-400 */
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
 }
 
 /* Top Navbar Styling */

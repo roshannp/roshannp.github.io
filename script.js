@@ -9,54 +9,51 @@ document.addEventListener("DOMContentLoaded", function() {
     const body = document.body;
     const themeToggle = document.getElementById('theme-toggle');
     
-    // Theme Toggle Functionality
-    function setTheme(theme) {
-        if (theme === 'dark') {
-            body.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-            // Force a reflow to ensure the transition happens
-            void body.offsetHeight;
-        } else {
-            body.setAttribute('data-theme', 'light');
-            localStorage.setItem('theme', 'light');
-            // Force a reflow to ensure the transition happens
-            void body.offsetHeight;
-        }
-        // Update ARIA label for accessibility
-        const themeToggle = document.getElementById('theme-toggle');
-        if (themeToggle) {
-            const newTheme = theme === 'dark' ? 'light' : 'dark';
-            themeToggle.setAttribute('aria-label', `Toggle ${newTheme} mode`);
-            themeToggle.setAttribute('aria-pressed', theme === 'dark');
-        }
-    }
-    
     // Check for saved theme preference or use system preference
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     // Set initial theme
-    if (savedTheme) {
-        setTheme(savedTheme);
-    } else {
-        setTheme(prefersDark ? 'dark' : 'light');
+    let currentTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+    
+    // Apply the theme
+    function applyTheme(theme) {
+        body.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        
+        // Update button state
+        if (themeToggle) {
+            const isDark = theme === 'dark';
+            themeToggle.setAttribute('aria-pressed', isDark);
+            themeToggle.setAttribute('aria-label', `Switch to ${isDark ? 'light' : 'dark'} mode`);
+            
+            // Update icons
+            const sunIcon = themeToggle.querySelector('.fa-sun');
+            const moonIcon = themeToggle.querySelector('.fa-moon');
+            
+            if (sunIcon && moonIcon) {
+                sunIcon.style.display = isDark ? 'block' : 'none';
+                moonIcon.style.display = isDark ? 'none' : 'block';
+            }
+        }
     }
     
-    // Toggle theme on button click
+    // Toggle theme function
+    function toggleTheme() {
+        currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(currentTheme);
+    }
+    
+    // Initialize theme
+    applyTheme(currentTheme);
+    
+    // Add event listener to theme toggle
     if (themeToggle) {
         themeToggle.addEventListener('click', (e) => {
             e.preventDefault();
-            const currentTheme = body.getAttribute('data-theme');
-            setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+            toggleTheme();
         });
     }
-    
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        if (!localStorage.getItem('theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
-        }
-    });
     
     // Create mobile menu overlay
     const mobileMenuOverlay = document.createElement('div');
