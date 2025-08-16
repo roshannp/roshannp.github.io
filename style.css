@@ -291,6 +291,45 @@ a:hover {
     margin-right: 0.5rem;
 }
 
+/* ==== Blog cards alignment overrides ==== */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.project-title { min-width: 0; }
+.project-title h3 { margin: 0 0 0.5rem; }
+
+.project-description { margin: 0.5rem 0 1rem; color: var(--light-text); }
+
+.project-features {
+  margin-top: auto;              /* pins footer to bottom */
+  border-top: 1px solid var(--border-color);
+  padding-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.feature { display: flex; align-items: flex-start; gap: 8px; }
+.feature i { margin-top: 2px; }
+
 /* Experience Section */
 .experience-item {
     margin-bottom: 2.5rem;
