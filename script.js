@@ -276,6 +276,11 @@ document.addEventListener("DOMContentLoaded", function () {
         projects: `
   ┌─ MISSION LOG ────────────────────────────────────┐
   │                                                   │
+  │  [OPS-000] AM I SECURE — Attack Surface Scanner   │
+  │            Recon | SSL | Headers | CVE | DNS      │
+  │            <span class="highlight">roshannp.github.io/amisecure</span>        │
+  │            STATUS: LIVE                           │
+  │                                                   │
   │  [OPS-001] Buggy Web-App Exploitation             │
   │            OWASP Top 10 | Burp Suite | Nmap       │
   │            github.com/roshannp/Web-Application-   │

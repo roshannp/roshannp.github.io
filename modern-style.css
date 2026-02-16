@@ -1170,9 +1170,19 @@ body {
 
 .mission-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(0, 255, 65, 0.3);
+    border-color: rgba(74, 222, 128, 0.25);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4), var(--glow-green);
     color: inherit;
+}
+
+.mission-card.featured-card {
+    border-color: rgba(74, 222, 128, 0.2);
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, var(--bg-card) 0%, rgba(74, 222, 128, 0.03) 100%);
+}
+
+.mission-card.featured-card .card-title {
+    color: var(--neon-green);
 }
 
 .card-glow {
