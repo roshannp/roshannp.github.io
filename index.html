@@ -3,540 +3,373 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roshan Nellore Prasad | Security Engineer</title>
+  <title>Roshan Nellore Prasad</title>
+  <meta name="description" content="AppSec &amp; NetSec Engineer — Security at Medline Industries, Chicago IL. OSCP+, CEH, Security+.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="modern-style.css">
 </head>
 <body>
 
-  <header class="navbar" id="navbar">
-    <div class="container">
-      <a href="#hero" class="nav-brand">RNP</a>
-      <button class="menu-toggle" aria-label="Toggle navigation" id="menuToggle">
-        <span></span><span></span><span></span>
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">RNP</a>
+      <button class="nav-toggle" id="menuBtn" aria-label="Toggle menu">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+          <path d="M3 6h14M3 10h14M3 14h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
       </button>
-      <nav>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#certifications" class="nav-link">Certifications</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#platforms">Platforms</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
+  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="container">
-      <div class="hero-content">
-        <p class="hero-eyebrow">Hello, I'm</p>
-        <h1 class="hero-title">Roshan Nellore Prasad</h1>
-        <p class="hero-subtitle">Security Engineer</p>
-        <p class="hero-description">Passionate about solving complex security challenges across Offensive and Defensive Security. I dive deep into vulnerabilities, threat patterns, and secure design principles.</p>
-        <div class="hero-certs">
-          <a href="https://credentials.offsec.com/9cb13bd4-6f13-4003-9b57-71008e5c73e1#acc.e7HUN5kp" target="_blank" class="cert-badge oscp">OSCP+</a>
-          <a href="https://drive.google.com/file/d/18dhyHa5Gyn6pGiO7ld3RB1NrYvBbosC0/view?usp=share_link" target="_blank" class="cert-badge ceh">CEH</a>
-          <a href="https://www.credly.com/badges/da1e94e7-5fa2-47c6-9d8e-bdf9fced43ad/linked_in_profile" target="_blank" class="cert-badge secplus">Security+</a>
-        </div>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/roshannp" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/roshannp" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://app.hackthebox.com/profile/1178221" target="_blank" title="HackTheBox (Top 2%)"><i class="fas fa-cube"></i></a>
-          <a href="https://tryhackme.com/p/rone7552" target="_blank" title="TryHackMe"><i class="fas fa-flag"></i></a>
-          <a href="http://cyberdefenders.org/p/roshanroe" target="_blank" title="CyberDefenders (US Top 100)"><i class="fas fa-shield-alt"></i></a>
-          <a href="https://leetcode.com/u/rone7552/" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
-          <a href="mailto:np.roshan@outlook.com" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>
+      <p class="hero-eyebrow">
+        <span class="hero-dot"></span>
+        Chicago, IL &nbsp;&middot;&nbsp; Open to opportunities
+      </p>
+      <h1 class="hero-name">Roshan<br>Nellore Prasad</h1>
+      <p class="hero-role">AppSec &amp; NetSec Engineer</p>
+      <p class="hero-bio">Security engineer with hands-on experience in application and network security &mdash; SAST/DAST, threat modeling, Zero Trust microsegmentation, and cloud security across AWS and Azure environments.</p>
+      <div class="cert-pills">
+        <span class="cert-pill oscp">OSCP+</span>
+        <span class="cert-pill ceh">CEH v12</span>
+        <span class="cert-pill sec">Security+</span>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/roshannp" target="_blank" rel="noopener" class="hero-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.83-2.34 4.68-4.57 4.92.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/roshannp" target="_blank" rel="noopener" class="hero-link">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:np.roshan@outlook.com" class="hero-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          np.roshan@outlook.com
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="section bg-light" id="about">
+  <!-- SKILLS -->
+  <section id="skills">
     <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-content">
-        <p>I'm a Security Engineer with expertise spanning both offensive and defensive security domains. With an M.S. in Cybersecurity Engineering from the University of Colorado Boulder and industry certifications including OSCP+, CEH, and Security+, I bring a comprehensive approach to security challenges.</p>
-        <p>Currently at Medline Industries, I lead web application and API security testing, build automation tools, and design threat models for cloud infrastructure. I'm passionate about making systems more secure through both breaking and defending them.</p>
-      </div>
-      <div class="stats-grid">
-        <div class="stat-card"><div class="stat-icon"><i class="fas fa-shield-alt"></i></div><div class="stat-info"><h3>Security Engineer</h3><p>Medline Industries &middot; Present</p></div></div>
-        <div class="stat-card"><div class="stat-icon"><i class="fas fa-graduation-cap"></i></div><div class="stat-info"><h3>M.S. Cybersecurity</h3><p>University of Colorado Boulder</p></div></div>
-        <div class="stat-card"><div class="stat-icon"><i class="fas fa-trophy"></i></div><div class="stat-info"><h3>HackTheBox Top 2%</h3><p>CyberDefenders US Top 100</p></div></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-header"><h2 class="section-title">Skills &amp; Expertise</h2><div class="section-line"></div></div>
+      <p class="label">Expertise</p>
+      <h2>Skills &amp; Tools</h2>
       <div class="skills-grid">
-        <div class="skill-category">
-          <div class="skill-category-header red"><i class="fas fa-crosshairs"></i><h3>Offensive Security</h3></div>
-          <div class="skill-list">
-            <div class="skill-item"><span>Penetration Testing</span><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
-            <div class="skill-item"><span>Web App Exploitation</span><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
-            <div class="skill-item"><span>Privilege Escalation</span><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
-            <div class="skill-item"><span>Network Exploitation</span><div class="skill-bar"><div class="skill-fill" style="width:88%"></div></div></div>
-            <div class="skill-item"><span>Reverse Engineering</span><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div></div>
+        <div class="fade-in">
+          <p class="skill-group-label">Application Security</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Burp Suite</span>
+            <span class="skill-tag">OWASP ZAP</span>
+            <span class="skill-tag">SAST / DAST</span>
+            <span class="skill-tag">Metasploit</span>
+            <span class="skill-tag">Snyk</span>
+            <span class="skill-tag">Prisma Cloud</span>
+            <span class="skill-tag">Promptfoo</span>
+            <span class="skill-tag">CrowdStrike Falcon</span>
           </div>
-          <div class="tool-tags"><span>Burp Suite</span><span>Metasploit</span><span>Nmap</span><span>SQLmap</span><span>Kali Linux</span><span>Hashcat</span><span>Ghidra</span><span>BloodHound</span></div>
         </div>
-        <div class="skill-category">
-          <div class="skill-category-header blue"><i class="fas fa-shield-alt"></i><h3>Defensive Security</h3></div>
-          <div class="skill-list">
-            <div class="skill-item"><span>Network Security</span><div class="skill-bar"><div class="skill-fill blue" style="width:92%"></div></div></div>
-            <div class="skill-item"><span>SIEM &amp; Log Analysis</span><div class="skill-bar"><div class="skill-fill blue" style="width:88%"></div></div></div>
-            <div class="skill-item"><span>Firewall Management</span><div class="skill-bar"><div class="skill-fill blue" style="width:90%"></div></div></div>
-            <div class="skill-item"><span>Incident Response</span><div class="skill-bar"><div class="skill-fill blue" style="width:85%"></div></div></div>
-            <div class="skill-item"><span>Cloud Security (AWS)</span><div class="skill-bar"><div class="skill-fill blue" style="width:87%"></div></div></div>
+        <div class="fade-in">
+          <p class="skill-group-label">Network Security</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Palo Alto NGFW</span>
+            <span class="skill-tag">Panorama</span>
+            <span class="skill-tag">Zscaler ZIA / ZPA</span>
+            <span class="skill-tag">Illumio</span>
+            <span class="skill-tag">Cloudflare</span>
+            <span class="skill-tag">CheckPoint</span>
+            <span class="skill-tag">Nessus</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">ExtraHop</span>
           </div>
-          <div class="tool-tags"><span>Checkpoint</span><span>Palo Alto</span><span>Splunk</span><span>HashiCorp Vault</span><span>Zscaler</span><span>Illumio</span><span>Snyk</span><span>AWS Security</span></div>
         </div>
-        <div class="skill-category full-width">
-          <div class="skill-category-header purple"><i class="fas fa-code"></i><h3>Development &amp; Scripting</h3></div>
-          <div class="tool-tags large"><span>Python</span><span>Bash</span><span>JavaScript</span><span>Solidity</span><span>SQL</span><span>Docker</span><span>Kubernetes</span><span>AWS Lambda</span><span>Terraform</span><span>Git</span></div>
+        <div class="fade-in">
+          <p class="skill-group-label">Cloud &amp; Infrastructure</p>
+          <div class="skill-tags">
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Azure</span>
+            <span class="skill-tag">Terraform</span>
+            <span class="skill-tag">HashiCorp Vault</span>
+            <span class="skill-tag">Splunk</span>
+            <span class="skill-tag">YARA</span>
+            <span class="skill-tag">Sigma Rules</span>
+          </div>
+        </div>
+        <div class="fade-in">
+          <p class="skill-group-label">Languages &amp; Frameworks</p>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Bash</span>
+            <span class="skill-tag">MITRE ATT&amp;CK</span>
+            <span class="skill-tag">OWASP</span>
+            <span class="skill-tag">Zero Trust</span>
+            <span class="skill-tag">ISO 27001/02</span>
+            <span class="skill-tag">HIPAA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="label">Work</p>
+      <h2>Experience</h2>
+      <div class="exp-list">
+        <div class="exp-item fade-in">
+          <div>
+            <p class="exp-role">Security Engineer</p>
+            <p class="exp-company">Medline Industries &nbsp;&middot;&nbsp; Chicago, IL</p>
+            <p class="exp-focus">AppSec &nbsp;&middot;&nbsp; NetSec &nbsp;&middot;&nbsp; Cloud Security &nbsp;&middot;&nbsp; Zero Trust</p>
+          </div>
+          <span class="exp-date">Feb 2024 &ndash; Present</span>
+        </div>
+        <div class="exp-item fade-in">
+          <div>
+            <p class="exp-role">Member of Scientific Staff</p>
+            <p class="exp-company">Dish Network &nbsp;&middot;&nbsp; Denver, CO</p>
+            <p class="exp-focus">IoT Security &nbsp;&middot;&nbsp; DevSecOps &nbsp;&middot;&nbsp; Secrets Management</p>
+          </div>
+          <span class="exp-date">Jun 2023 &ndash; Jan 2024</span>
+        </div>
+        <div class="exp-item fade-in">
+          <div>
+            <p class="exp-role">Member of Scientific Staff &mdash; Intern</p>
+            <p class="exp-company">Dish Network &nbsp;&middot;&nbsp; Denver, CO</p>
+            <p class="exp-focus">AppSec Testing &nbsp;&middot;&nbsp; Vulnerability Assessment</p>
+          </div>
+          <span class="exp-date">May &ndash; Aug 2022</span>
         </div>
       </div>
     </div>
   </section>
   <!-- PROJECTS -->
-  <section class="section bg-light" id="projects">
+  <section id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="section-subtitle">Security research, tools, and engineering work</p>
+      <p class="label">Work</p>
+      <h2>Projects</h2>
       <div class="projects-grid">
 
-        <div class="project-card featured">
-          <div class="project-header">
-            <div>
-              <span class="project-badge">Featured</span>
-              <h3 class="project-title">AI-Powered Vulnerability Scanner</h3>
-            </div>
-            <div class="project-links">
-              <a href="#" class="btn btn-sm">GitHub</a>
-              <a href="#" class="btn btn-sm btn-primary">Live Demo</a>
-            </div>
+        <div class="project-card featured fade-in">
+          <div class="project-card-top">
+            <span class="project-name">AM I SECURE</span>
+            <a href="https://roshannp.github.io/amisecure/" target="_blank" rel="noopener" class="project-link">Live &rarr;</a>
           </div>
-          <p class="project-desc">An intelligent vulnerability assessment platform combining traditional scanning techniques with machine learning to reduce false positives by 60%. Integrates with CI/CD pipelines for automated security testing.</p>
+          <p class="project-desc">Attack surface scanner &mdash; subdomain enumeration, SSL/TLS analysis, security header checks, and CVE correlation for any target domain.</p>
           <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">Docker</span><span class="tag">REST API</span><span class="tag">PostgreSQL</span>
+            <span class="project-tag">AppSec</span>
+            <span class="project-tag">Recon</span>
+            <span class="project-tag">Python</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Network Packet Analyzer</h3>
-            <div class="project-links"><a href="#" class="btn btn-sm">GitHub</a></div>
+        <div class="project-card fade-in">
+          <div class="project-card-top">
+            <span class="project-name">Impromptwo</span>
+            <a href="https://github.com/roshannp/Impromptwo" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
           </div>
-          <p class="project-desc">Real-time network traffic analysis tool with anomaly detection capabilities. Identifies suspicious patterns, DDoS signatures, and protocol violations using custom heuristics.</p>
+          <p class="project-desc">Prompt-injection vulnerability scanner for GenAI workloads. Context-aware mutation with 200+ test cases, 87% detection accuracy on Azure-hosted models.</p>
           <div class="project-tags">
-            <span class="tag">C++</span><span class="tag">libpcap</span><span class="tag">Python</span><span class="tag">Wireshark</span>
+            <span class="project-tag">GenAI Security</span>
+            <span class="project-tag">Promptfoo</span>
+            <span class="project-tag">Azure</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Web Application Firewall (WAF)</h3>
-            <div class="project-links"><a href="#" class="btn btn-sm">GitHub</a></div>
+        <div class="project-card fade-in">
+          <div class="project-card-top">
+            <span class="project-name">Web App Pentesting Toolkit</span>
+            <a href="https://github.com/roshannp/Web-Application-Pentesting" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
           </div>
-          <p class="project-desc">Custom WAF implementation supporting OWASP Top 10 mitigation, rate limiting, and geo-blocking. Deployed in production protecting 3 web applications.</p>
+          <p class="project-desc">Scripts and methodologies for web application penetration testing &mdash; OWASP Top 10, API vulnerabilities, authentication flaws.</p>
           <div class="project-tags">
-            <span class="tag">Nginx</span><span class="tag">Lua</span><span class="tag">Redis</span><span class="tag">Python</span>
+            <span class="project-tag">AppSec</span>
+            <span class="project-tag">OWASP</span>
+            <span class="project-tag">Python</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">CTF Automation Framework</h3>
-            <div class="project-links"><a href="#" class="btn btn-sm">GitHub</a></div>
+        <div class="project-card fade-in">
+          <div class="project-card-top">
+            <span class="project-name">Privacy-Preserving Analytics (FHE)</span>
+            <a href="https://github.com/roshannp/AWS-Projects" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
           </div>
-          <p class="project-desc">A modular toolkit for automating common CTF tasks including binary exploitation, cryptography challenges, and web-based vulnerabilities. Used by 50+ participants.</p>
+          <p class="project-desc">AWS analytics pipeline using Fully Homomorphic Encryption &mdash; computation on encrypted customer data with 70% reduction in data exposure risk.</p>
           <div class="project-tags">
-            <span class="tag">Python</span><span class="tag">pwntools</span><span class="tag">Crypto</span><span class="tag">RE</span>
+            <span class="project-tag">AWS</span>
+            <span class="project-tag">Cryptography</span>
+            <span class="project-tag">Python</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Secure File Storage System</h3>
-            <div class="project-links"><a href="#" class="btn btn-sm">GitHub</a></div>
+        <div class="project-card fade-in">
+          <div class="project-card-top">
+            <span class="project-name">Digital Forensics Toolkit</span>
+            <a href="https://github.com/roshannp/Digital-Forensics" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
           </div>
-          <p class="project-desc">End-to-end encrypted file storage with zero-knowledge architecture. Implements AES-256-GCM encryption, PBKDF2 key derivation, and secure sharing via asymmetric cryptography.</p>
+          <p class="project-desc">Data carver for JPEG, PNG, and PDF extraction from hex dumps. Brute-force and dictionary password cracker for MD5, SHA-256, and SHA-512.</p>
           <div class="project-tags">
-            <span class="tag">Go</span><span class="tag">AES-256</span><span class="tag">RSA</span><span class="tag">SQLite</span>
+            <span class="project-tag">DFIR</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Cryptography</span>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Threat Intelligence Dashboard</h3>
-            <div class="project-links">
-              <a href="#" class="btn btn-sm">GitHub</a>
-              <a href="#" class="btn btn-sm btn-primary">Demo</a>
-            </div>
+        <div class="project-card fade-in">
+          <div class="project-card-top">
+            <span class="project-name">Ad Blocker Efficiency Analysis</span>
+            <a href="https://github.com/roshannp/Ad-Blockers-Efficiency" target="_blank" rel="noopener" class="project-link">GitHub &rarr;</a>
           </div>
-          <p class="project-desc">Aggregates threat feeds from multiple sources (VirusTotal, Shodan, AlienVault OTX) into a unified dashboard with IOC correlation and automated alerting.</p>
+          <p class="project-desc">Comparative analysis of 5+ ad blockers across 3 browsers via Selenium. Measured blocking success up to 92% and page load impact on 50+ sites.</p>
           <div class="project-tags">
-            <span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Elasticsearch</span><span class="tag">Kibana</span>
+            <span class="project-tag">Selenium</span>
+            <span class="project-tag">Privacy</span>
+            <span class="project-tag">Python</span>
           </div>
         </div>
 
       </div>
     </div>
   </section>
-  <!-- BLOGS / WRITE-UPS -->
-  <section class="section" id="blogs">
+
+  <!-- CTF PLATFORMS -->
+  <section id="platforms">
     <div class="container">
-      <h2 class="section-title">Write-ups &amp; Blogs</h2>
-      <p class="section-subtitle">Technical write-ups, research, and insights</p>
-      <div class="blog-grid">
-
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-category">CTF Write-up</span><span class="blog-date">Dec 2024</span></div>
-          <h3 class="blog-title">Exploiting a Race Condition in a Banking Application</h3>
-          <p class="blog-excerpt">A detailed walkthrough of discovering and exploiting a TOCTOU race condition vulnerability that allowed unauthorized fund transfers in a simulated banking CTF challenge.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-category">Research</span><span class="blog-date">Nov 2024</span></div>
-          <h3 class="blog-title">Deep Dive: Modern Heap Exploitation Techniques</h3>
-          <p class="blog-excerpt">An exploration of contemporary heap exploitation methods including tcache poisoning, fastbin dup, and House of Force, with practical examples on recent CTF binaries.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-category">Tutorial</span><span class="blog-date">Oct 2024</span></div>
-          <h3 class="blog-title">Building a Custom Burp Suite Extension for API Testing</h3>
-          <p class="blog-excerpt">Step-by-step guide to developing a Burp Suite extension in Python using Jython that automates detection of common API security misconfigurations.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-category">Research</span><span class="blog-date">Sep 2024</span></div>
-          <h3 class="blog-title">Analyzing Malware Communication Patterns with ML</h3>
-          <p class="blog-excerpt">Using machine learning to identify C2 communication patterns in network traffic, achieving 94% detection accuracy on a dataset of known malware families.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-category">CTF Write-up</span><span class="blog-date">Aug 2024</span></div>
-          <h3 class="blog-title">DEFCON 32 CTF: Reversing a Custom VM Challenge</h3>
-          <p class="blog-excerpt">Complete write-up of a challenging reverse engineering problem from DEFCON 32 involving a custom virtual machine implementation with obfuscated bytecode.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </article>
-
-        <article class="blog-card">
-          <div class="blog-meta"><span class="blog-category">Tutorial</span><span class="blog-date">Jul 2024</span></div>
-          <h3 class="blog-title">Kubernetes Security Hardening: A Practical Guide</h3>
-          <p class="blog-excerpt">Comprehensive guide to hardening Kubernetes clusters including RBAC configuration, pod security policies, network policies, and secrets management best practices.</p>
-          <a href="#" class="blog-link">Read More →</a>
-        </article>
-
-      </div>
-    </div>
-  </section>
-  <!-- EXPERIENCE -->
-  <section class="section bg-light" id="experience">
-    <div class="container">
-      <h2 class="section-title">Experience</h2>
-      <p class="section-subtitle">Professional background and career journey</p>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Security Engineer</h3>
-                <p class="timeline-org">TechCorp Inc.</p>
-              </div>
-              <span class="timeline-date">2023 – Present</span>
-            </div>
-            <ul class="timeline-list">
-              <li>Conducted penetration testing of web applications, APIs, and cloud infrastructure</li>
-              <li>Developed automated security scanning pipeline reducing assessment time by 40%</li>
-              <li>Led red team exercises simulating advanced persistent threat scenarios</li>
-              <li>Mentored junior security analysts and conducted internal training sessions</li>
-            </ul>
-          </div>
+      <p class="label">CTF &amp; Research</p>
+      <h2>Platforms</h2>
+      <div class="platforms-grid">
+        <a href="https://app.hackthebox.com/profile/1178221" target="_blank" rel="noopener" class="platform-card fade-in">
+          <p class="platform-name">HackTheBox</p>
+          <p class="platform-handle">@roshannp</p>
+          <p class="platform-stat">Top 1%</p>
+          <p class="platform-stat-label">Global ranking</p>
+        </a>
+        <a href="http://cyberdefenders.org/p/roshanroe" target="_blank" rel="noopener" class="platform-card fade-in">
+          <p class="platform-name">CyberDefenders</p>
+          <p class="platform-handle">@roshanroe</p>
+          <p class="platform-stat">#25</p>
+          <p class="platform-stat-label">US ranking (Best)</p>
+        </a>
+        <a href="https://tryhackme.com/p/rone7552" target="_blank" rel="noopener" class="platform-card fade-in">
+          <p class="platform-name">TryHackMe</p>
+          <p class="platform-handle">@rone7552</p>
+          <p class="platform-stat">Active</p>
+          <p class="platform-stat-label">Profile</p>
+        </a>
+        <div class="platform-card fade-in">
+          <p class="platform-name">Proving Grounds</p>
+          <p class="platform-handle">Offensive Security</p>
+          <p class="platform-stat">110+</p>
+          <p class="platform-stat-label">Machines pwned</p>
         </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Junior Security Analyst</h3>
-                <p class="timeline-org">CyberShield Solutions</p>
-              </div>
-              <span class="timeline-date">2022 – 2023</span>
-            </div>
-            <ul class="timeline-list">
-              <li>Monitored SIEM alerts and investigated security incidents</li>
-              <li>Performed vulnerability assessments and produced detailed remediation reports</li>
-              <li>Assisted in developing security policies and compliance documentation</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3 class="timeline-title">Security Research Intern</h3>
-                <p class="timeline-org">SecureLab Research</p>
-              </div>
-              <span class="timeline-date">Summer 2021</span>
-            </div>
-            <ul class="timeline-list">
-              <li>Researched novel exploitation techniques targeting IoT devices</li>
-              <li>Published two CVEs related to firmware vulnerabilities in consumer routers</li>
-              <li>Contributed to open-source security tools used by the research community</li>
-            </ul>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section class="section" id="education">
+  <section id="education">
     <div class="container">
-      <h2 class="section-title">Education</h2>
-      <p class="section-subtitle">Academic background and qualifications</p>
-      <div class="edu-grid">
-
-        <div class="edu-card">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-body">
-            <h3 class="edu-degree">B.Tech in Computer Science &amp; Engineering</h3>
-            <p class="edu-school">Institute of Technology, Hyderabad</p>
-            <p class="edu-detail">Specialization in Cybersecurity &amp; Cryptography · CGPA 8.9/10</p>
-            <span class="edu-year">2018 – 2022</span>
+      <p class="label">Academic</p>
+      <h2>Education</h2>
+      <div class="edu-list">
+        <div class="edu-item fade-in">
+          <div>
+            <p class="edu-degree">M.S. Cybersecurity Engineering</p>
+            <p class="edu-school">University of Colorado Boulder</p>
+            <p class="edu-gpa">GPA 3.72 / 4.0</p>
           </div>
+          <span class="edu-date">Aug 2021 &ndash; May 2023</span>
         </div>
-
-        <div class="edu-card">
-          <div class="edu-icon">🏫</div>
-          <div class="edu-body">
-            <h3 class="edu-degree">Higher Secondary Certificate (Class XII)</h3>
-            <p class="edu-school">Narayana Junior College, Hyderabad</p>
-            <p class="edu-detail">Physics, Chemistry, Mathematics · 97.4%</p>
-            <span class="edu-year">2016 – 2018</span>
+        <div class="edu-item fade-in">
+          <div>
+            <p class="edu-degree">B.E. Computer Science</p>
+            <p class="edu-school">Anna University, Chennai</p>
+            <p class="edu-gpa">GPA 8.0 / 10</p>
           </div>
+          <span class="edu-date">Aug 2017 &ndash; May 2021</span>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- ACHIEVEMENTS -->
-  <section class="section bg-light" id="achievements">
+  <section id="achievements">
     <div class="container">
-      <h2 class="section-title">Achievements</h2>
-      <p class="section-subtitle">Recognition, rankings, and accomplishments</p>
-      <div class="achievements-grid">
-        <div class="achievement-card">
-          <div class="achievement-icon">🏆</div>
-          <h3 class="achievement-title">Top 1% on HackTheBox</h3>
-          <p class="achievement-desc">Ranked in the top 1% of global HackTheBox users with Pro Hacker rank</p>
+      <p class="label">Recognition</p>
+      <h2>Achievements</h2>
+      <div class="ach-list">
+        <div class="ach-item fade-in">
+          <span class="ach-dash">&mdash;</span>
+          <span class="ach-text"><strong>Amy Barnes Frey Fellowship 2023</strong> &nbsp;&middot;&nbsp; University of Colorado Boulder</span>
         </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">🥇</div>
-          <h3 class="achievement-title">DEFCON 32 CTF Finalist</h3>
-          <p class="achievement-desc">Qualified for DEFCON 32 CTF Finals, placing in the top 20 teams worldwide</p>
+        <div class="ach-item fade-in">
+          <span class="ach-dash">&mdash;</span>
+          <span class="ach-text"><strong>Best Intern Award 2022</strong> &nbsp;&middot;&nbsp; Dish Network</span>
         </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">🎯</div>
-          <h3 class="achievement-title">Bug Bounty Hall of Fame</h3>
-          <p class="achievement-desc">Recognized by 3 major tech companies for responsible disclosure of critical vulnerabilities</p>
+        <div class="ach-item fade-in">
+          <span class="ach-dash">&mdash;</span>
+          <span class="ach-text"><strong>IRJET 2020</strong> &nbsp;&middot;&nbsp; Published research &mdash; Light Weight Scalable Blockchain</span>
         </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">📜</div>
-          <h3 class="achievement-title">CVE Author</h3>
-          <p class="achievement-desc">Published 4 CVEs for vulnerabilities discovered in enterprise software and IoT devices</p>
+        <div class="ach-item fade-in">
+          <span class="ach-dash">&mdash;</span>
+          <span class="ach-text"><strong>HackTheBox</strong> &nbsp;&middot;&nbsp; Top 1% global ranking</span>
         </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">🌟</div>
-          <h3 class="achievement-title">National Cyber Olympiad</h3>
-          <p class="achievement-desc">Gold medalist in National Cyber Olympiad 2021, competing against 10,000+ participants</p>
+        <div class="ach-item fade-in">
+          <span class="ach-dash">&mdash;</span>
+          <span class="ach-text"><strong>CyberDefenders</strong> &nbsp;&middot;&nbsp; Rank #25, US Top 100</span>
         </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">🔬</div>
-          <h3 class="achievement-title">Research Publication</h3>
-          <p class="achievement-desc">Co-authored research paper on ML-based intrusion detection, published in IEEE Security &amp; Privacy</p>
+        <div class="ach-item fade-in">
+          <span class="ach-dash">&mdash;</span>
+          <span class="ach-text"><strong>Proving Grounds</strong> &nbsp;&middot;&nbsp; 110+ machines pwned</span>
         </div>
-      </div>
-    </div>
-  </section>
-  <!-- CERTIFICATIONS -->
-  <section class="section" id="certifications">
-    <div class="container">
-      <h2 class="section-title">Certifications</h2>
-      <p class="section-subtitle">Professional certifications and credentials</p>
-      <div class="certs-grid">
-
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-badge oscp">OSCP+</span>
-            <div class="cert-body">
-              <h3 class="cert-name">Offensive Security Certified Professional+</h3>
-              <p class="cert-issuer">Offensive Security</p>
-            </div>
-          </div>
-          <div class="cert-footer">
-            <span class="cert-year">2024</span>
-            <a href="#" class="cert-verify">Verify →</a>
-          </div>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-badge ceh">CEH</span>
-            <div class="cert-body">
-              <h3 class="cert-name">Certified Ethical Hacker</h3>
-              <p class="cert-issuer">EC-Council</p>
-            </div>
-          </div>
-          <div class="cert-footer">
-            <span class="cert-year">2023</span>
-            <a href="#" class="cert-verify">Verify →</a>
-          </div>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-badge secplus">SEC+</span>
-            <div class="cert-body">
-              <h3 class="cert-name">CompTIA Security+</h3>
-              <p class="cert-issuer">CompTIA</p>
-            </div>
-          </div>
-          <div class="cert-footer">
-            <span class="cert-year">2022</span>
-            <a href="#" class="cert-verify">Verify →</a>
-          </div>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-badge aws">AWS</span>
-            <div class="cert-body">
-              <h3 class="cert-name">AWS Certified Security – Specialty</h3>
-              <p class="cert-issuer">Amazon Web Services</p>
-            </div>
-          </div>
-          <div class="cert-footer">
-            <span class="cert-year">2024</span>
-            <a href="#" class="cert-verify">Verify →</a>
-          </div>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-badge ejpt">eJPT</span>
-            <div class="cert-body">
-              <h3 class="cert-name">eLearnSecurity Junior Penetration Tester</h3>
-              <p class="cert-issuer">eLearnSecurity</p>
-            </div>
-          </div>
-          <div class="cert-footer">
-            <span class="cert-year">2022</span>
-            <a href="#" class="cert-verify">Verify →</a>
-          </div>
-        </div>
-
-        <div class="cert-card">
-          <div class="cert-header">
-            <span class="cert-badge gcih">GCIH</span>
-            <div class="cert-body">
-              <h3 class="cert-name">GIAC Certified Incident Handler</h3>
-              <p class="cert-issuer">SANS Institute</p>
-            </div>
-          </div>
-          <div class="cert-footer">
-            <span class="cert-year">2023</span>
-            <a href="#" class="cert-verify">Verify →</a>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section bg-light" id="contact">
+  <section id="contact">
     <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="section-subtitle">Open to opportunities, collaborations, and interesting conversations</p>
+      <p class="label">Get in touch</p>
+      <h2>Contact</h2>
       <div class="contact-grid">
-
-        <div class="contact-card">
-          <div class="contact-icon">📧</div>
-          <h3 class="contact-label">Email</h3>
-          <a href="mailto:roshan@example.com" class="contact-value">roshan@example.com</a>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-icon">💼</div>
-          <h3 class="contact-label">LinkedIn</h3>
-          <a href="https://linkedin.com/in/roshannp" class="contact-value" target="_blank">linkedin.com/in/roshannp</a>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-icon">🐙</div>
-          <h3 class="contact-label">GitHub</h3>
-          <a href="https://github.com/roshannp" class="contact-value" target="_blank">github.com/roshannp</a>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-icon">🔒</div>
-          <h3 class="contact-label">HackTheBox</h3>
-          <a href="https://hackthebox.com/profile/roshannp" class="contact-value" target="_blank">HackTheBox Profile</a>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-icon">🚩</div>
-          <h3 class="contact-label">TryHackMe</h3>
-          <a href="https://tryhackme.com/p/roshannp" class="contact-value" target="_blank">TryHackMe Profile</a>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-icon">🐦</div>
-          <h3 class="contact-label">Twitter / X</h3>
-          <a href="https://twitter.com/roshannp" class="contact-value" target="_blank">@roshannp</a>
-        </div>
-
+        <a href="mailto:np.roshan@outlook.com" class="contact-item fade-in">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">np.roshan@outlook.com</span>
+        </a>
+        <a href="https://linkedin.com/in/roshannp" target="_blank" rel="noopener" class="contact-item fade-in">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">in/roshannp</span>
+        </a>
+        <a href="https://github.com/roshannp" target="_blank" rel="noopener" class="contact-item fade-in">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/roshannp</span>
+        </a>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <p class="footer-name">Roshan Nellore Prasad</p>
-      <p class="footer-tagline">Security Engineer · Penetration Tester · Researcher</p>
-      <div class="footer-links">
-        <a href="https://github.com/roshannp" target="_blank">GitHub</a>
-        <a href="https://linkedin.com/in/roshannp" target="_blank">LinkedIn</a>
-        <a href="mailto:roshan@example.com">Email</a>
+      <div class="footer-inner">
+        <span class="footer-name">Roshan Nellore Prasad</span>
+        <span class="footer-right">Chicago, IL &nbsp;&middot;&nbsp; np.roshan@outlook.com</span>
       </div>
-      <p class="footer-copy">&copy; 2024 Roshan Nellore Prasad. All rights reserved.</p>
     </div>
   </footer>
 
