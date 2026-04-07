@@ -61,7 +61,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
           np.roshan@outlook.com
         </a>
-        <a href="https://app.hackthebox.com/users/1178221" target="_blank" rel="noopener" class="hero-link">
+        <a href="https://app.hackthebox.com/public/users/1178221" target="_blank" rel="noopener" class="hero-link">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
           HackTheBox
         </a>
@@ -239,7 +239,7 @@
       <p class="label">CTF &amp; Research</p>
       <h2>Platforms</h2>
       <div class="platforms-grid">
-        <a href="https://app.hackthebox.com/profile/1178221" target="_blank" rel="noopener" class="platform-card fade-in">
+        <a href="https://app.hackthebox.com/public/users/1178221" target="_blank" rel="noopener" class="platform-card fade-in">
           <p class="platform-name">HackTheBox</p>
           <p class="platform-handle">@roshannp</p>
           <p class="platform-stat">Top 1%</p>
